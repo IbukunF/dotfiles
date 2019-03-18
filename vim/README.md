@@ -17,6 +17,8 @@ The following plugins are currently deployed:
 * [Syntastic](#markdown-header-syntastic)
 * [Tagbar](#markdown-header-tagbar)
 * [YouCompleteMe](#markdown-header-youcompleteme)
+* [Vim Pandoc](#markdown-header-pandoc)
+* [Vim Latex Live Preview](#markdown-header-latex-live)
 
 
 ### Airline
@@ -145,3 +147,16 @@ omnicomplete system to provide semantic completions for many other languages
 
 #### Keybindings
 * `<leader>d` - diagnostic information
+
+
+### Pandoc
+
+[vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
+vim-pandoc provides facilities to integrate Vim with the pandoc document converter and work with documents written in its markdown variant (although textile documents are also supported). vim-pandoc's goals are 1) to provide advanced integration with pandoc, 2) a comfortable document writing environment, and 3) great configurability. Requires installation of [vim-pandoc/vim-pandoc-syntax](https://github.com/vim-pandoc/vim-pandoc-syntax) for syntax support
+
+
+### Vim Latex Live Preview
+
+[vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
+provides a live preview of the output PDF of your LaTeX file. The display of the output PDF file will be updated lively as you type (just hold the cursor and you will see the PDF file updated). Currently, vim-latex-live-preview only support UNIX-like systems.
+
