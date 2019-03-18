@@ -44,14 +44,14 @@ function _zsh_prompt_virtualenv {
     fi
 }
 
-ZSHACK_PROMPT_MODE_INSERT="%{%K{214}%}%{%B%F{16}%} %c %{%b%k%F{214}%}"
+ZSHACK_PROMPT_MODE_INSERT="%{%K{032}%}%{%B%F{16}%} %c %{%b%k%F{032}%}"
 ZSHACK_PROMPT_MODE_NORMAL="%{%K{190}%}%{%B%F{16}%} %c %{%b%k%F{190}%}"
 ZSHACK_PROMPT_GRAYSCALE="%{%K{244}%}%{%B%F{16}%} %c %{%b%k%F{244}%}"
 
 # this will be changed by zle via the modal_prompt module
 ZSHACK_PROMPT_MODE=$ZSHACK_PROMPT_MODE_INSERT
 
-ZSHACK_PROMPT='${ZSHACK_PROMPT_MODE}$(_zsh_prompt_git 237 231 214)%{%f%b%k%} '
+ZSHACK_PROMPT='${ZSHACK_PROMPT_MODE}$(_zsh_prompt_git 237 231 032)%{%f%b%k%} '
 ZSHACK_PROMPT_FROZEN='${ZSHACK_PROMPT_GRAYSCALE}$(_zsh_prompt_git 236 251 244)%{%f%b%k%} '
 
 ZSHACK_RPROMPT='$(_zsh_prompt_virtualenv)'
