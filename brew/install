@@ -1,0 +1,58 @@
+# vim:syntax=sh:
+
+# Add other brew formulae
+PACKAGES=(
+    python2
+    python3
+    autopep8
+    ctags
+    cmake
+    mysql
+    tmux
+    tree
+    wget
+    pandoc
+    npm
+    maven
+    gradle
+    rabbitmq
+    joplin # open source journal app
+)
+echo "Installing brew packages..."
+brew install ${PACKAGES[@]}
+
+echo "Installing Python packages..."
+PYTHON_PACKAGES=(
+    ipython
+    virtualenv
+    virtualenvwrapper
+)
+#sudo pip install ${PYTHON_PACKAGES[@]}
+
+# cask formulae
+CASKS=(
+    android-studio
+    alfred
+    java
+    arduino
+    docker
+    firefox
+    flux
+    google-backup-and-sync
+    google-chrome
+    intellij-idea-ce
+    iterm2
+    minikube
+    mysqlworkbench
+    postman
+    slack
+    spectacle
+    spotify
+    sourcetree
+    the-unarchiver
+    virtualbox
+    visual-studio-code
+    vlc
+)
+echo "Installing cask apps..."
+brew cask install ${CASKS[@]}
