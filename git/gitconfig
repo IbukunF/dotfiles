@@ -1,14 +1,7 @@
 [user]
-    name = James A Shackleford
-    email = shack@linux.com
+	name = IbukunF
+	email = irf23@drexel.edu
     signingkey = 221B96CE
-[sendemail]
-    from = James A Shackleford <shack@linux.com>
-    smtpserver = smtp.gmail.com
-    smtpuser = James.A.Shackleford@gmail.com
-    smtpencryption = tls
-    chainreplyto = true
-    smtpserverport = 587
 [push]
     default = simple
 [alias]
@@ -20,7 +13,15 @@
     stat = status -sb
     files = show --name-status
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/ibukunf/.gitignore_global
     editor = vim
 #[credential]
 #   helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/ibukunf/.stCommitMsg
