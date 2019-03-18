@@ -11,6 +11,17 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DOTFILES_DIR/etc/helpers.sh
 probe_capabilities
 
+# Check for Homebrew, install if not installed
+if test ! $(which brew); then
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # Update homebrew recipes
+    brew update
+
+    echo "Installing cask..."
+    brew tap caskroom/cask
+fi
+
 # If a specific installer is specified, or if a list
 # of specific installers is given, run only those;
 # otherwise, just install everything
