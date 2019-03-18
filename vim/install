@@ -21,11 +21,9 @@ install_symlink vim/spell/     $HOME/.vim/
 install_symlink vim/snippets   $HOME/.vim/
 install_symlink vim/UltiSnips  $HOME/.vim/
 
-# YouCompleteMe dependencies
-install_package cmake
-install_package build-essential
-install_package python-dev
-install_package python-flake8
+# install latest version of vim
+echo "Installing brewed vim"
+brew install vim
 
 # download & install plugins
 vim -E +PlugInstall +qall
